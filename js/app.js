@@ -11,18 +11,6 @@ function initOpenLayers() {
     matrixIds[z] = 'EPSG:900913:' + z;
   }
 
-  // var map = new ol.Map({
-  //     target: 'map',
-  //     layers: [
-  //       new ol.layer.Tile({
-  //         source: new ol.source.MapQuest({layer: 'sat'})
-  //       })
-  //     ],
-  //     view: new ol.View2D({
-  //       center: ol.proj.transform([37.41, 8.82], 'EPSG:4326', 'EPSG:3857'),
-  //       zoom: 4
-  //     })
-  //   });
   map = new ol.Map({
     layers: [
       new ol.layer.Tile({
@@ -38,7 +26,7 @@ function initOpenLayers() {
             matrixIds: matrixIds
           }),
           style: '_null',
-          extent: [-13703362.89946257, 6287709.945851705, -13666596.688857399, 6318131.883109205]
+          extent: [-16643092.788385,4534550.2653588,-5988382.5431409,11207197.085613]
         })
       })
     ],
